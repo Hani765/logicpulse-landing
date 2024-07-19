@@ -7,8 +7,7 @@ import Link from "next/link";
 
 export const Hero = () => {
   const heroRef = useRef(null);
-  const inView = useInView(heroRef, { once: true, threshold: 0.1 });
-
+  const inView = useInView(heroRef, { once: true });
   const typingTexts = [
     "Global Affiliates Pro Networks Alliance.",
     "Join the Best Marketing Campaigns.",

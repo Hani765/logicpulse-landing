@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const Hero = () => {
   const heroRef = useRef(null);
-  const inView = useInView(heroRef, { once: true, amount: 0.1 });
+  const inView = useInView(heroRef, { once: true, threshold: 0.1 });
 
   const typingTexts = [
     "Global Affiliates Pro Networks Alliance.",
@@ -19,9 +19,17 @@ export const Hero = () => {
     <section
       ref={heroRef}
       id="home"
-      className="container overflow-x-hidden grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10"
+      className="container overflow-x-hidden grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10 relative"
     >
-      <div className="text-center lg:text-start space-y-6">
+      {/* Animated background */}
+      <motion.div
+        className="absolute inset-0 bg-green-0"
+        initial={{ translateX: '-100%' }}
+        animate={{ translateX: '0%' }}
+        transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+      />
+
+      <div className="text-center lg:text-start space-y-6 relative z-10">
         {inView && (
           <motion.main
             className="text-5xl md:text-6xl font-bold"

@@ -3,50 +3,44 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer id="footer">
-      <hr className="w-11/12 mx-auto" />
+    <footer id="footer" className="bg-gray-100 dark:bg-gray-900">
+      <hr className="w-11/12 mx-auto border-t-2 border-gray-300 dark:border-gray-700 my-8" />
 
-      <section className="container py-20 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
+      <section className="container py-8 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
         <div className="col-span-full xl:col-span-2">
           <Link
-            rel="noreferrer noopener"
             href="/"
-            className="font-bold text-xl flex items-center"
+            className="font-bold text-xl flex items-center space-x-2"
           >
-            <Image height={40} width={40} src="/assets/flogicpulse256.png" alt="logo" className=" rounded-full mx-2" />
-            L o G i c P u l s e™
+            <Image
+              height={40}
+              width={40}
+              src="/assets/flogicpulse256.png"
+              alt="logo"
+              className="rounded-full"
+            />
+            <span>L o G i c P u l s e™</span>
           </Link>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow US</h3>
+          <h3 className="font-bold text-lg">Follow Us</h3>
           <div>
             <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
+              href="https://www.linkedin.com/company/logicpulse1"
+              className="text-gray-800 dark:text-white opacity-60 hover:opacity-100 transition-opacity"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Github
+              LinkedIn
             </a>
           </div>
-
           <div>
             <a
-              rel="noreferrer noopener"
               href="#"
-              className="opacity-60 hover:opacity-100"
+              className="text-gray-800 dark:text-white opacity-60 hover:opacity-100 transition-opacity"
             >
               Twitter
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Dribbble
             </a>
           </div>
         </div>
@@ -55,29 +49,16 @@ export const Footer = () => {
           <h3 className="font-bold text-lg">Platforms</h3>
           <div>
             <a
-              rel="noreferrer noopener"
               href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Web
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
+              className="text-gray-800 dark:text-white opacity-60 hover:opacity-100 transition-opacity"
             >
               Mobile
             </a>
           </div>
-
           <div>
             <a
-              rel="noreferrer noopener"
               href="#"
-              className="opacity-60 hover:opacity-100"
+              className="text-gray-800 dark:text-white opacity-60 hover:opacity-100 transition-opacity"
             >
               Desktop
             </a>
@@ -88,29 +69,16 @@ export const Footer = () => {
           <h3 className="font-bold text-lg">About</h3>
           <div>
             <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
+              href="#howItWorks"
+              className="text-gray-800 dark:text-white opacity-60 hover:opacity-100 transition-opacity"
             >
               Features
             </a>
           </div>
-
           <div>
             <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Pricing
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
+              href="#faq"
+              className="text-gray-800 dark:text-white opacity-60 hover:opacity-100 transition-opacity"
             >
               FAQ
             </a>
@@ -121,44 +89,31 @@ export const Footer = () => {
           <h3 className="font-bold text-lg">Community</h3>
           <div>
             <a
-              rel="noreferrer noopener"
               href="#"
-              className="opacity-60 hover:opacity-100"
+              className="text-gray-800 dark:text-white opacity-60 hover:opacity-100 transition-opacity"
             >
-              Youtube
+              YouTube
             </a>
           </div>
-
           <div>
             <a
-              rel="noreferrer noopener"
               href="#"
-              className="opacity-60 hover:opacity-100"
+              className="text-gray-800 dark:text-white opacity-60 hover:opacity-100 transition-opacity"
             >
               Discord
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Twitch
             </a>
           </div>
         </div>
       </section>
 
-      <section className="container pb-14 text-center">
-        <h3>
-          &copy; 2024 Website devloped by{" "}
+      <section className="container py-4 text-center">
+        <h3 className="text-gray-600 dark:text-white text-sm">
+          &copy; 2024 Website Developed by{" "}
           <a
-            rel="noreferrer noopener"
-            target="_blank"
             href="https://logicpulse.offer18.com"
-            className="text-primary transition-all border-primary hover:border-b-2"
+            className="text-primary transition-all border-b-2 border-transparent hover:border-primary"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             L o G i c P u l s e™
           </a>

@@ -20,13 +20,13 @@ const features: FeatureProps[] = [
     icon: <MapIcon />,
     title: "Advertisers Engagement",
     description:
-      "Access high-payout offers directly from premium advertisers worldwide. Partner with top brands to maximize your earnings potential.",
+      "Access high-payout offers directly from premium advertisers worldwide. Partner with top brands to maximize your earnings.",
   },
   {
     icon: <PlaneIcon />,
     title: "Affiliate Scalability",
     description:
-      "Join a network of top affiliates worldwide, leveraging proven strategies to scale your affiliate business and maximize revenue.",
+      "LogicPulse a network of top affiliates worldwide, leveraging proven strategies to scale your affiliate business and maximize revenue.",
   },
   {
     icon: <GiftIcon />,
@@ -52,11 +52,11 @@ export const HowItWorks = () => {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5 }}
       >
-        How It{" "}
+       Discover What Sets Us {" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Works{" "}
+          APART {" "}
         </span>
-        Step-by-Step Guide
+        from Others?
       </motion.h2>
       <motion.p
         className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground"

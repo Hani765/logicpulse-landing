@@ -13,12 +13,12 @@ import Image from "next/image";
 import { FaGithub, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 export const HeroCards = () => {
-  const [conversationCount, setConversationCount] = useState(0);
+  const [conversationCount, setConversationCount] = useState(5064);
 
   // Function to increase conversation count every minute
   setTimeout(() => {
     setConversationCount((prevCount) => prevCount + 1);
-  }, 6000); // 60 seconds = 1 minute
+  }, 300100); // 60 seconds = 1 minute
 
   return (
 

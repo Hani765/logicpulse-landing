@@ -37,7 +37,7 @@ const routeList: RouteProps[] = [
   },
   {
     href: "#howItWorks",
-    label: "How it works",
+    label: "Discover",
   },
   {
     href: "#team",
@@ -45,7 +45,7 @@ const routeList: RouteProps[] = [
   },
   {
     href: "#faq",
-    label: "#Faq",
+    label: "FAQ",
   },
 ];
 
@@ -125,7 +125,9 @@ export const Navbar = () => {
             <ModeToggle />
             <Button className="py-0.5">
               <Link href="https://logicpulse.offer18.com" target="_blank" rel="noopener noreferrer">Login</Link></Button>
-            <Button className="py-1"><Link href="https://logicpulse.offer18.com/m/signup_self_aff?r=&am=" target="_blank" rel="noopener noreferrer" >Signup</Link></Button>
+            <Button className="py-1"><Link href="https://logicpulse.offer18.com/m/signup_self_aff?r=&am=" target="_blank" rel="noopener noreferrer" >Affiliates Signup</Link></Button>
+          <Button className="py-1"><Link href="https://logicpulse.offer18.com/m/signup_self_adv?r=&am=" target="_blank" rel="noopener noreferrer" >Advertisers Signup</Link></Button>
+        
           </div>
         </NavigationMenuList>
       </NavigationMenu>

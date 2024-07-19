@@ -124,7 +124,7 @@ const teamList: TeamProps[] = [
 
 export const Team = () => {
   const teamRef = useRef(null);
-  const inView = useInView(teamRef, { once: true });
+  const inView = useInView(teamRef, { once: true, threshold: 0.1 });
 
   const socialIcon = (iconName: string) => {
     switch (iconName) {

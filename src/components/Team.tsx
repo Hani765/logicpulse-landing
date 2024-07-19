@@ -50,7 +50,7 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "/assets/RAQIB.png",
+    imageUrl: "public/assets/RAQIB.png",
     name: "Habib Mia",
     position: "AFFILIATE MANAGER",
     content: "Habib manages our affiliate partnerships.",

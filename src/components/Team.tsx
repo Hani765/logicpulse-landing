@@ -51,13 +51,13 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl: "/assets/cube-leg.png",
-    name: "Habib Mia",
+    name: "Interviews in progress",
     position: "AFFILIATE MANAGER",
-    content: "Habib manages our affiliate partnerships.",
+    content: "manages our affiliate partnerships.",
     socialNetworks: [
-      { name: "Linkedin", url: "https://www.linkedin.com/in/raqibul-mia/" },
+      { name: "Linkedin", url: "#" },
       { name: "Facebook", url: "#" },
-      { name: "Skype", url: "skype:live:.cid.5f2d5fcf58b1f757" }, // Example Skype URL
+      { name: "Skype", url: "skype:#" }, // Example Skype URL
     ],
   },
   {

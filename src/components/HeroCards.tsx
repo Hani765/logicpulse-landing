@@ -50,14 +50,14 @@ export const HeroCards = () => {
           {/* Social Icons */}
           <Link
             rel="noreferrer noopener"
-            href="#"
+            href="https://www.facebook.com/logicpulseaffiliates"
             target="_blank"
             className={buttonVariants({
               variant: "ghost",
               size: "sm",
             })}
           >
-            <span className="sr-only">Github icon</span>
+            <span className="sr-only">Facebook icon</span>
             <FaFacebook className="w-5 h-5" />
           </Link>
           <Link
@@ -69,7 +69,7 @@ export const HeroCards = () => {
               size: "sm",
             })}
           >
-            <span className="sr-only">Twitter icon</span>
+            <span className="sr-only">Skype icon</span>
             <FaSkype className="w-5 h-5" />
           </Link>
           <Link

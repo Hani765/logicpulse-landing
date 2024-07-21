@@ -10,9 +10,14 @@ interface UserData {
     email: string;
     // Add other fields as needed
 }
+
 export default function Page() {
     const [loading, setLoading] = useState(false);
-    const [userData, setUserData] = useState<UserData | null>(null);
+    const [userData, setUserData] = useState<UserData | null>({
+        id: '1',
+        name: 'exaple',
+        email: 'email'
+    });
     const [error, setError] = useState<string | null>(null);
 
     const fetchData = async () => {

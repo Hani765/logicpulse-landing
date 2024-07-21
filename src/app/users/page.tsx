@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import React, { useState } from 'react';
+import axios from 'axios';
 
 export default function Page() {
     const [loading, setLoading] = useState(false);
@@ -15,25 +16,30 @@ export default function Page() {
         setError(null);
         setSuccess(null);
         try {
-            const response = await fetch('https://www.applee.xyz/api/auth/checkCredentials', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': 'Bearer RH1tAdsr8U5oF6NiatAwQgHeAdkckK0jahUBdcfKe5368de0'
-                },
-                body: JSON.stringify({ email, password })
-            });
+            const response = await axios.post('https://www.applee.xyz/api/auth/login',
+                { email, password },
+                {
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer RH1tAdsr8U5oF6NiatAwQgHeAdkckK0jahUBdcfKe5368de0'
+                    }
+                }
+            );
 
-            if (!response.ok) {
-                throw new Error(`Error: ${response.status}`);
-            }
-
-            // Assuming the response is a JSON object containing a message or token
-            const data = await response.json();
             setSuccess('Login successful!');
-            console.log(data);  // You can also use the response data as needed
+            console.log(response.data);  // You can also use the response data as needed
         } catch (error: any) {
-            setError(error.message);
+            if (error.response) {
+                // The request was made and the server responded with a status code
+                // that falls out of the range of 2xx
+                setError(`Error: ${error.response.status} - ${error.response.data.message}`);
+            } else if (error.request) {
+                // The request was made but no response was received
+                setError('Error: No response from server');
+            } else {
+                // Something happened in setting up the request that triggered an Error
+                setError(`Error: ${error.message}`);
+            }
         }
         setLoading(false);
     };

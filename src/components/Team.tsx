@@ -50,14 +50,14 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "/assets/RAQIB.png",
-    name: "Habib Mia",
+    imageUrl: "/assets/cube-leg.png",
+    name: "Interviews in progress",
     position: "AFFILIATE MANAGER",
-    content: "Habib manages our affiliate partnerships.",
+    content: "manages our affiliate partnerships.",
     socialNetworks: [
-      { name: "Linkedin", url: "https://www.linkedin.com/in/raqibul-mia/" },
+      { name: "Linkedin", url: "#" },
       { name: "Facebook", url: "#" },
-      { name: "Skype", url: "skype:live:.cid.5f2d5fcf58b1f757" }, // Example Skype URL
+      { name: "Skype", url: "skype:#" }, // Example Skype URL
     ],
   },
   {
@@ -124,7 +124,7 @@ const teamList: TeamProps[] = [
 
 export const Team = () => {
   const teamRef = useRef(null);
-  const inView = useInView(teamRef, { once: true });
+  const inView = useInView(teamRef, { once: true, threshold: 0.1 });
 
   const socialIcon = (iconName: string) => {
     switch (iconName) {

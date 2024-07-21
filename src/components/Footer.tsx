@@ -32,7 +32,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              LinkedIn
+              LinkedIn1
             </a>
           </div>
             <div>

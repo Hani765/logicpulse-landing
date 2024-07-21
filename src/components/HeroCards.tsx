@@ -10,8 +10,8 @@ import {
 } from "@/components/ui/card";
 import { Linkedin } from "lucide-react";
 import Image from "next/image";
-import { FaGithub, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
+import { FaSkype, FaFacebook } from "react-icons/fa6";
 export const HeroCards = () => {
   const [conversationCount, setConversationCount] = useState(5064);
 
@@ -58,7 +58,7 @@ export const HeroCards = () => {
             })}
           >
             <span className="sr-only">Github icon</span>
-            <FaGithub className="w-5 h-5" />
+            <FaFacebook className="w-5 h-5" />
           </Link>
           <Link
             rel="noreferrer noopener"
@@ -70,7 +70,7 @@ export const HeroCards = () => {
             })}
           >
             <span className="sr-only">Twitter icon</span>
-            <FaTwitter className="w-5 h-5" />
+            <FaSkype className="w-5 h-5" />
           </Link>
           <Link
             rel="noreferrer noopener"

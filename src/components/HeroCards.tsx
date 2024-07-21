@@ -62,7 +62,7 @@ export const HeroCards = () => {
           </Link>
           <Link
             rel="noreferrer noopener"
-            href="#"
+            href="skype:kashifaheer2011"
             target="_blank"
             className={buttonVariants({
               variant: "ghost",
@@ -74,7 +74,7 @@ export const HeroCards = () => {
           </Link>
           <Link
             rel="noreferrer noopener"
-            href="#"
+            href="https://www.linkedin.com/company/logicpulse1"
             target="_blank"
             className={buttonVariants({
               variant: "ghost",

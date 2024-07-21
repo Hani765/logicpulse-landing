@@ -35,6 +35,16 @@ export const Footer = () => {
               LinkedIn
             </a>
           </div>
+            <div>
+            <a
+              href="https://www.facebook.com/logicpulseaffiliates"
+              className="text-gray-800 dark:text-white opacity-60 hover:opacity-100 transition-opacity"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </a>
+          </div>
           <div>
             <a
               href="#"

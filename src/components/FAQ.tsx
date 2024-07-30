@@ -19,7 +19,7 @@ const FAQList = [
   },
   {
     question: "What payment systems do we use?",
-    answer: "We can process payments via Payoneer, BTC, USDT (TRC20), and Wire transfer.",
+    answer: "We can process payments via Payoneer, BTC, USDT (TRC20), and Capitalist.",
     value: "item-3",
   },
   {

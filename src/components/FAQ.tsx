@@ -24,7 +24,7 @@ const FAQList = [
   },
   {
     question: "What is the payment frequency and minimum payout amount?",
-    answer: "Payment Frequency: Initially net 30, then net 15. Minimum payout amount is $100.",
+    answer: " First Payment Net 30 This means the first payment is due within 30 days from the date of the invoice. Then Net 15 This means subsequent payments are due within 15 days from the date of the invoice.Minimum payout amount is $100. ",
     value: "item-4",
   },
   {

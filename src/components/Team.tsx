@@ -72,7 +72,7 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "/assets/cube-leg.png",
+    imageUrl: "/assets/sheeza-malik.png",
     name: "Sheeza Malik",
     position: "FINANCE MANAGER",
     content: "Managing our Finance department.",

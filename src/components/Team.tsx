@@ -50,14 +50,25 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "/assets/cube-leg.png",
+    imageUrl: "/assets/RAQIB.png",
     name: "Habib Mia",
     position: "AFFILIATE MANAGER",
-    content: "manages our affiliate partnerships.",
+    content: "Manages our affiliate partnerships.",
     socialNetworks: [
-      { name: "Linkedin", url: "#" },
+      { name: "Linkedin", url: "https://www.linkedin.com/in/raqibul-mia/" },
       { name: "Facebook", url: "#" },
-      { name: "Skype", url: "skype:#" }, // Example Skype URL
+      { name: "Skype", url: "skype:raqibulmia121_1" }, // Example Skype URL
+    ],
+  },
+  {
+    imageUrl: "/assets/zain-afaq.png",
+    name: "Zain Afaq",
+    position: "AFFILIATE MANAGER",
+    content: "Manages our affiliate partnerships.",
+    socialNetworks: [
+      { name: "Linkedin", url: "https://www.linkedin.com/in/zain-afaq-142a28203" },
+      { name: "Facebook", url: "#" },
+      { name: "Skype", url: "skype:live:.cid.e5c1fcfe9074d621" },
     ],
   },
   {
@@ -75,16 +86,6 @@ const teamList: TeamProps[] = [
     name: "Muhammad Hanzla",
     position: "TECH DEPARTMENT",
     content: "Hanzla develops seamless web experiences.",
-    socialNetworks: [
-      { name: "Linkedin", url: "#" },
-      { name: "Instagram", url: "#" },
-    ],
-  },
-  {
-    imageUrl: "/assets/cube-leg.png",
-    name: "Interviews in progress",
-    position: "BUSINESS INTELLIGENCE",
-    content: "Medior Data Analyst, Pricing & Commercial Analyst.",
     socialNetworks: [
       { name: "Linkedin", url: "#" },
       { name: "Instagram", url: "#" },

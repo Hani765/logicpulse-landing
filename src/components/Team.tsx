@@ -51,7 +51,7 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl: "/assets/cube-leg.png",
-    name: "Interviews in progress",
+    name: "Habib Mia",
     position: "AFFILIATE MANAGER",
     content: "manages our affiliate partnerships.",
     socialNetworks: [
